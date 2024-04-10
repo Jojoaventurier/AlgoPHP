@@ -6,20 +6,6 @@
 </p>
 
 <?php
-/*
-$birthDate = "1985-01-17";
-$now = "2018-05-21";
-$birthDate = explode("-", $birthDate);
-$nowDate = explode("-", $nowDate);
-
-//$yearDiff = $birthDate[0] - $nowDate[0];
-
-var_dump($yearDiff);
-*/
-
-// $age = date_diff(date_create($birthDate), date_create('now'))->y;
-
-//SOLUTION
 
 $bday = new DateTime('17.1.1985'); // Your date of birth
 $today = new Datetime(date('21.05.2018'));

@@ -12,13 +12,44 @@
 
 $amountToPay = 152;
 $amountGiven = 200;
+$amountReturned = $amountGiven - $amountToPay;
 
 $nbDix = 0;
 $nbCinq = 0;
 $nbDeux = 0;
 $nbUn = 0;
 
-$amountReturned = $amountGiven - $amountToPay;
+
+while ($amountReturned >= 10) {
+    $nbDix++;
+    $amountReturned -= 10;
+}
+    if ($amountReturned < 10 && $amountReturned >= 5) {
+        $nbCinq++;
+        $amountReturned -= 5; 
+
+    } while ($amountReturned < 5 && $amountReturned >= 2) {
+        $nbDeux++;
+        $amountReturned -= 2;
+   
+    } if ($amountReturned < 2) {
+        $nbUn++;
+        $amountReturned -= 1;
+    }
+
+    echo "Montant à payer : $amountToPay €<br> 
+        Montant versé : $amountGiven €<br>
+        Reste à payer : $amountReturned €<br>
+        *************************************<br>
+        Rendu de monnaie :<br>
+        $nbDix billet(s) de 10€, $nbCinq billet(s) de 5€, $nbDeux pièce(s) de 2€, $nbUn pièce(s) de 1€.<br>";
+
+
+
+
+
+/*  COPILOT CAME UP WITH THIS :
+
 
 function returnGeld($amountReturned) {
     $coins = [10, 5, 2, 1];
@@ -40,18 +71,7 @@ while($amountReturned > 0) {
 
 returnGeld($amountReturned);
 
-echo "Montant à payer : $amountToPay €<br> 
-        Montant versé : $amountGiven €<br>
-        Reste à payer : $amountReturned €<br>
-        *************************************<br>
-        Rendu de monnaie : <br>";
-
-
 var_dump(returnGeld($amountReturned));
+*/
 
 
-/* on soustrait la somme due et somme donnée
-doit nous rendre 48€
-tant que 48€ > 10, je donne un billet de 10 et j'enlève 10 de la somme à rendre etc... 
-si la somme à rendre est inf à 10, supérieur à 5
-tant que peut donner p.2   P2 + 1

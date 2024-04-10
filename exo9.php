@@ -11,7 +11,6 @@ echo $age = 36;
 echo "<br>";
 echo $sexe = "F";
 echo "<br>";
-$categorie = "";
 
 
 if ($sexe === "M") {
