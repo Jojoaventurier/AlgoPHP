@@ -1,7 +1,8 @@
-<h2>Exercice _</h2>
+<h2>Exercice 14</h2>
 
 <p>
-    Enoncé de l'exercice
+    Calculer l'âge exact d'une persone à partir de sa date de naissance 
+    (en années, mois, jours).<br>
 </p>
 
 <?php
