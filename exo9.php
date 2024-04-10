@@ -7,23 +7,23 @@
 
 <?php
 
-echo $age = 5;
+echo $age = 36;
 echo "<br>";
-echo $sexe = "M";
+echo $sexe = "F";
 echo "<br>";
 $categorie = "";
 
-if ($sexe === "M" && $age < 20) {
-     $categorie = "non imposable";
-} else if ( $sexe == "M" && $age >= 20) {
-     $categorie = "imposable";
-} else if ($sexe === "F" && $age < 18) {
-    $categorie = "non imposable";
-} else if ($sexe === "F" && $age < 36) {
-    $categorie = "imposable";
-} else if ($sexe === "F" && $age > 35) {
-    $categorie = "non imposable";
+
+if ($sexe === "M") {
+    if ($age > 20) {
+        echo "La personne est imposable";
+    } else {
+        echo "La personne n'est pas imposable";
+    }
+} else if ($sexe === "F") {
+    if ($age < 18 || $age > 35) {
+        echo "La personne n'est pas imposable";
+    } else {
+        echo "La personne est imposable";
+    }
 }
-
-
-echo "La personne est $categorie";

@@ -1,7 +1,7 @@
 <h2>Exercice 8</h2>
 
 <p>
-   Ecrire un algorithme qui renvoie la table de mutltipllication d'un nombre passé en paramètre sous la forme suivante<br>
+   Ecrire un algorithme qui renvoie la table de mutltiplication d'un nombre passé en paramètre sous la forme suivante<br>
 </p>
 
 <?php
