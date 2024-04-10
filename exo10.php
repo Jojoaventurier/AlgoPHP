@@ -13,6 +13,7 @@
 $amountToPay = 152;
 $amountGiven = 200;
 $amountReturned = $amountGiven - $amountToPay;
+$amountReturnedDisplayed = $amountGiven - $amountToPay;
 
 $nbDix = 0;
 $nbCinq = 0;
@@ -39,8 +40,8 @@ while ($amountReturned >= 10) {
 
     echo "Montant à payer : $amountToPay €<br> 
         Montant versé : $amountGiven €<br>
-        Reste à payer : $amountReturned €<br>
-        *************************************<br>
+        A rendre : $amountReturnedDisplayed €<br>
+        ************************<br>
         Rendu de monnaie :<br>
         $nbDix billet(s) de 10€, $nbCinq billet(s) de 5€, $nbDeux pièce(s) de 2€, $nbUn pièce(s) de 1€.<br>";
 
