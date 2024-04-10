@@ -7,3 +7,9 @@
 
 <?php
 
+$montantFrancs = 100;
+$montantEuros = round(($montantFrancs / 6.56), 2);
+
+echo "Montant en francs : $montantFrancs<br>";
+echo "$montantFrancs francs = $montantEuros €<br>";
+

@@ -9,7 +9,7 @@
 $mot1 = "bonjour";
 $mot2 = "dad";
 
-function Palindrome(string $mot): string {
+function palindrome(string $mot): string {
     if ($mot == strrev($mot)) {
         return "$mot est un palindrome.<br>";
     } else {
@@ -17,5 +17,5 @@ function Palindrome(string $mot): string {
     }
 }
 
-echo Palindrome($mot1);
-echo Palindrome($mot2);
+echo palindrome($mot1);
+echo palindrome($mot2);

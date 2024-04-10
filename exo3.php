@@ -7,34 +7,10 @@
 
 <?php
 
-$phrase = "Notre formation DL commence aujourd'hui.<br>";
+$phrase = "Notre formation commence aujourd'hui.";
+var_dump($phrase);
 
-//SOLUTION 1
-$date = ["aujourd'hui", "demain"];
-$phrase1 = "Notre formation DL commence ".$date[0].".<br>";
-$phrase2 = "Notre formation DL commence ".$date[1].".<br>";
-
-echo $phrase1;
-echo $phrase2;
-
-
-// SOLUTION 2
+// SOLUTION 
 echo $phrase;
 $phrase3 = str_replace("aujourd'hui", "demain", $phrase);
 echo $phrase3;
-
-// SOLUTION 3
-function replaceAuj(string $phrase): string {
-    if ($phrase = "Notre formation commence aujourd'hui.") {
-        str_replace("aujourd'hui", "demain", $phrase);
-        return $phrase;
-    } else if ($phrase == "Notre formation commence demain.") {
-        str_replace("demain", "aujourd'hui", $phrase); 
-        return $phrase;
-    }
-}
-
-echo $phrase;
-echo replaceAuj($phrase);
-echo replaceAuj($phrase);
-
