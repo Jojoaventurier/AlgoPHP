@@ -33,10 +33,10 @@ while ($amountReturned >= 10) {
         $nbDeux++;
         $amountReturned -= 2;
    
-    } if ($amountReturned < 2) {
-        $nbUn++;
-        $amountReturned -= 1;
-    }
+        } if ($amountReturned < 2) {
+            $nbUn++;
+            $amountReturned -= 1;
+        }
 
     echo "Montant à payer : $amountToPay €<br> 
         Montant versé : $amountGiven €<br>

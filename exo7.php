@@ -13,12 +13,6 @@
 $age = 20;
 $message = "Veuillez choisir un âge entre 6 et 17 ans";
 
-/*
-$poussin = "Poussin";
-$pupille = "Pupille";
-$minime = "Minime";
-$cadet = "Cadet";
-*/
 
 if ($age <= 5) {
     echo $message;
