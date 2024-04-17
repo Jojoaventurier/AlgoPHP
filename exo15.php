@@ -63,8 +63,15 @@ class Personne {
     }
 
     public function afficherInfos() {
-        $age = "40 ans";
-        return $this. " a ". $this->getDateNaissance();
+
+        $bdate = $this->dateNaissance;
+        $today = new DateTime();
+        $diff = $today->diff($bdate);
+
+         return  $this. " a ". $diff->format('%Y') . " ans<br>" ;
+
+        
+        
     }
 
     public function __toString() {
@@ -74,8 +81,16 @@ class Personne {
 }
 
 $p1 = new Personne ("DUPONT", "Michel", "1980-02-19");
+$p2 = new Personne ("DUCHEMIN", "Alice", "1985-01-18");
 
 echo $p1->afficherInfos();
+echo $p2->afficherInfos();
+
+
+
+
+
+
 
 
 
