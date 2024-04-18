@@ -58,10 +58,6 @@ class Personne {
         return $this;
     }
 
-    public function calcAge() {
-
-    }
-
     public function afficherInfos() {
 
         $bdate = $this->dateNaissance;
