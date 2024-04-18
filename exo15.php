@@ -66,8 +66,6 @@ class Personne {
 
          return  $this. " a ". $diff->format('%Y') . " ans<br>" ;
 
-        
-        
     }
 
     public function __toString() {
